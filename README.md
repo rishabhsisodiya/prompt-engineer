@@ -8,19 +8,24 @@ a guess, and nothing in the result tells you which parts were guessed. This skil
 the gaps that matter, labels the ones it defaulted, and writes the rest down precisely.
 
 It works for any kind of task: code, debugging, research, writing, analysis, planning,
-design, data work and more. When the task concerns the current repository, it reads the
-relevant code, so the prompt names real files and conventions instead of generic ones.
+design, data work and more. It never reads your files: for a coding task, the prompt tells
+the receiving agent what to inspect first and which conventions to follow, and that agent
+does the reading. That keeps the skill light and the same everywhere.
+
+Share a reference document and the prompt follows its format. Share none, and the prompt
+applies the recognised standard structure for that kind of deliverable (a user manual, PRD,
+test plan, API guide, report and so on) and writes the section outline in.
 
 ## What you get
 
 Every run returns:
 
-1. **The prompt**, ready to copy.
-2. **Assumptions:** everything it defaulted instead of asking.
-3. **Could not determine:** what is still unknown, and what would resolve it.
+1. **The prompt**, ready to copy, and as short as it can be while still working.
+2. **Open points:** every assumption it made and everything still unknown. Always present,
+   even when empty. A result comes with its limits attached.
 
-Sections 2 and 3 are always present, even when empty. A result comes with its limits
-attached.
+It asks at most one round of questions. It never loads unless you run it, so it costs
+nothing in sessions where you do not.
 
 ## What it will not do
 

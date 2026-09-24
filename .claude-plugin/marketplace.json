@@ -9,7 +9,7 @@
       "name": "prompt-engineer",
       "source": "./",
       "description": "Turns a rough idea, requirement, question or existing prompt into a clear, context-aware prompt, and says what it could not pin down.",
-      "version": "0.1.0"
+      "version": "0.4.0"
     }
   ]
 }
