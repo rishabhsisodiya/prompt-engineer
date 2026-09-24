@@ -31,15 +31,38 @@ attached.
 
 ## Install
 
-Copy `skills/prompt-engineer/` into `~/.claude/skills/` (every project) or
-`.claude/skills/` (one project). Then run:
+Install it as a Claude Code plugin, available in every project:
 
 ```
-/prompt-engineer <your rough idea, requirement, or existing prompt>
+claude plugin marketplace add rishabhsisodiya/prompt-engineer
+claude plugin install prompt-engineer@prompt-engineer --scope user
 ```
 
-Tested on macOS with Claude Code. The skill is plain Markdown and should work with any agent
-that reads Agent Skills, but only Claude Code has been tried.
+Start a new session, then run:
+
+```
+/prompt-engineer:prompt-engineer <your rough idea, requirement, or existing prompt>
+```
+
+Plugin skills are namespaced by the plugin, hence the double name.
+
+To pick up a new version:
+
+```
+claude plugin marketplace update prompt-engineer
+claude plugin update prompt-engineer@prompt-engineer
+```
+
+To remove it:
+
+```
+claude plugin uninstall prompt-engineer@prompt-engineer
+claude plugin marketplace remove prompt-engineer
+```
+
+Installed and checked with `claude plugin validate` on macOS. The skill itself is plain
+Markdown in `skills/prompt-engineer/SKILL.md`, so another agent that reads Agent Skills can
+use it by copying that folder, but only Claude Code has been tried.
 
 ## Related
 
