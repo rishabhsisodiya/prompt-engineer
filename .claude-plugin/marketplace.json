@@ -1,0 +1,15 @@
+{
+  "name": "prompt-engineer",
+  "description": "A skill that turns rough intent into a prompt another AI can execute reliably.",
+  "owner": {
+    "name": "Rishabh Sisodiya"
+  },
+  "plugins": [
+    {
+      "name": "prompt-engineer",
+      "source": "./",
+      "description": "Turns a rough idea, requirement, question or existing prompt into a clear, context-aware prompt, and says what it could not pin down.",
+      "version": "0.1.0"
+    }
+  ]
+}

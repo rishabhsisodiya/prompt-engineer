@@ -1,0 +1,16 @@
+{
+  "name": "prompt-engineer",
+  "description": "Turns a rough idea, requirement, question or existing prompt into a clear, context-aware prompt another AI can execute reliably. Asks about the gaps instead of filling them, and says what it could not pin down.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Rishabh Sisodiya"
+  },
+  "homepage": "https://github.com/rishabhsisodiya/prompt-engineer",
+  "license": "MIT",
+  "keywords": [
+    "agent-skills",
+    "claude-code",
+    "prompt-engineering",
+    "prompts"
+  ]
+}

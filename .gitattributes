@@ -1,0 +1,4 @@
+# This repository is Markdown. GitHub ignores Markdown when working out a repository's
+# language, so without this it would show no language at all.
+*.md linguist-detectable=true
+*.md linguist-documentation=false
